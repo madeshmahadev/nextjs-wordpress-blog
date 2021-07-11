@@ -169,7 +169,7 @@ export async function getStaticProps({ params = {} } = {}) {
         },
       },
     },
-    revalidate: 1,
+    revalidate: 10,
   };
 }
 
