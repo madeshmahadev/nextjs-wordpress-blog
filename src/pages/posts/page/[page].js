@@ -3,7 +3,15 @@ import usePageMetadata from 'hooks/use-page-metadata';
 
 import TemplateArchive from 'templates/archive';
 
+import { useRouter } from 'next/router';
+
 export default function Posts({ posts, pagination }) {
+  const router = useRouter();
+
+  if (router.isFallback) {
+    return <div>Loading</div>;
+  }
+
   const title = `All Posts`;
   const slug = 'posts';
 

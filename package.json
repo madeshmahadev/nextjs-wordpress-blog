@@ -1,11 +1,12 @@
 {
   "name": "next-wordpress-starter",
-  "homepage": "https://blogging.ecstasycreatives.com/",
+  "homepage": "https://blogging.ecstasycreatives.com",
   "version": "0.1.0",
   "license": "MIT",
   "author": "Team Ecstasy",
   "scripts": {
-    "build": "next build && next export",
+    "build": "next build",
+    "export": "next export",
     "wpe-build": "npm run build",
     "dev": "next dev",
     "format": "yarn lint --fix",

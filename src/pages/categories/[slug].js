@@ -5,7 +5,15 @@ import usePageMetadata from 'hooks/use-page-metadata';
 import TemplateArchive from 'templates/archive';
 import Title from 'components/Title';
 
+import { useRouter } from 'next/router';
+
 export default function Category({ category, posts }) {
+  const router = useRouter();
+
+  if (router.isFallback) {
+    return <div>Loading</div>;
+  }
+
   const { name, description, slug } = category;
 
   const { metadata } = usePageMetadata({

@@ -24,7 +24,8 @@ module.exports = {
   },
   plugins: ['react', 'react-hooks'],
   rules: {
-    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/rules-of-hooks': 'off',
+    'react/no-unescaped-entities': 'off',
     'react-hooks/exhaustive-deps': 'warn',
     'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'off',

@@ -19,7 +19,14 @@ import FeaturedImage from 'components/FeaturedImage';
 
 import styles from 'styles/pages/Post.module.scss';
 
+import { useRouter } from 'next/router';
+
 export default function Post({ post, socialImage, relatedPosts }) {
+  const router = useRouter();
+  if (router.isFallback) {
+    return <div>Loading</div>;
+  }
+
   const {
     title,
     metaTitle,
