@@ -38,7 +38,7 @@ export async function getStaticPaths() {
     return { params: { page: String(i + 1) } };
   });
   return {
-    paths
-
+    paths,
+    fallback: true
   };
 }
