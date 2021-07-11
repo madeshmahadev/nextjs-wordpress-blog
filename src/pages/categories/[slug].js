@@ -35,7 +35,7 @@ export async function getStaticProps({ params = {} } = {}) {
       category,
       posts,
     },
-    revalidate: 1,
+    revalidate: 10,
   };
 }
 
