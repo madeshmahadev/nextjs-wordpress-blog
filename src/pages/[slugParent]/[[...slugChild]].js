@@ -141,7 +141,7 @@ export async function getStaticProps({ params = {} } = {}) {
       page,
       breadcrumbs,
     },
-    revalidate: 10,
+    revalidate: 1,
   };
 }
 

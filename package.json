@@ -5,8 +5,7 @@
   "license": "MIT",
   "author": "Team Ecstasy",
   "scripts": {
-    "build": "next build",
-    "export": "next export",
+    "build": "next build && next export",
     "wpe-build": "npm run build",
     "dev": "next dev",
     "format": "yarn lint --fix",
