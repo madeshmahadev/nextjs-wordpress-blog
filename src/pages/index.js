@@ -26,7 +26,9 @@ export default function Home({ posts, pagination }) {
           }}
         />
 
-        <p
+       <strong>Welcome!!!</strong> 
+       
+       <p
           className={styles.description}
           dangerouslySetInnerHTML={{
             __html: description,
